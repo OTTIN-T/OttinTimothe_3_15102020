@@ -1,0 +1,127 @@
+p {
+	font-family: $font-texte;
+}
+
+h2, h3{
+	font-family: $font-sous-titre;
+}
+
+// Partie localisation
+.localisation{
+	display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: darken($colour-background, 5%);
+}
+
+.fa-map-marker-alt{
+	padding-right: 2rem;
+    margin-left: -2rem;
+}
+
+// Partie accroche
+.accroche{
+	background-color: $colour-background;
+}
+
+.texte-accroche{
+	text-align: center;
+    padding-top: 2rem;
+
+		h1{
+			font-family: $font-sous-titre;
+			font-size: 1.5rem;
+			padding: 0rem 4rem 1rem 4rem;
+		}
+
+		p{
+			padding: 0rem 3rem 1rem 3rem;
+		}
+}
+
+.btn-explorer{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 3rem 0rem;
+
+	p{
+		background-image: linear-gradient($colour-secondary,$colour-primary);
+	    padding: 1rem;
+	    border-radius: 2rem;
+	    color: white;
+	    box-shadow: 0px 5px 10px 0px darken($colour-background, 25%);
+
+	    &:hover{
+			background-image: linear-gradient(lighten($colour-secondary, 7%),lighten($colour-primary, 7%));
+		}
+	}
+}
+
+// Partie fonctionnement
+.fonctionnement{
+	text-align: center;
+	padding-bottom: 3rem;
+
+	h2{
+		font-size: 1.5rem;
+		text-align: left;
+		padding: 2rem 0rem 1rem 1rem;
+	}
+}
+
+.element-fonctionnement{
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+
+    p{
+	    font-size: 1.2rem;
+	    background-color: $colour-background;
+	    padding: 1.5rem 2rem;
+	    border-radius: 1rem;
+    }
+
+    span{
+    	margin-left: -2.3rem;
+	    background-color: $colour-primary;
+	    border-radius: 2rem;
+    }
+}
+
+.element-composer{
+	padding: 0rem 0.8rem 0rem 0rem;
+}
+
+.fa-mobile-alt{
+	margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.fa-list-ul{
+	margin-left: 1.5rem;
+    margin-right: 1.5rem;
+} 
+
+.fa-store{
+	margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media #{$medium-up}{
+	.fonctionnement{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.element-fonctionnement{
+		display: inline-block;
+	}
+}
+
+
+
