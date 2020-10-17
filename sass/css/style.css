@@ -112,6 +112,29 @@ header {
   box-shadow: 0px -3px 6px 3px #7b7777;
   position: relative; }
 
+footer {
+  background-color: #424141; }
+  footer a {
+    color: white; }
+  footer nav {
+    padding: 1rem 0rem 1rem 1rem;
+    font-family: "Roboto Regular", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS"; }
+  footer li {
+    padding: 0.2rem; }
+
+.titre-footer {
+  font-family: "Shrikhand-Regular", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS";
+  color: white;
+  font-size: 1.3rem;
+  padding-bottom: 1rem; }
+
+.fa-utensils {
+  padding-right: 1.2rem; }
+
+.fa-hands-helping {
+  padding-right: 1rem;
+  font-size: 0.8rem; }
+
 p {
   font-family: "Roboto Regular", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS"; }
 
@@ -169,35 +192,59 @@ h2, h3 {
   text-align: center;
   display: flex;
   justify-content: center;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  margin: 0rem 1rem; }
   .element-fonctionnement p {
     font-size: 1.2rem;
     background-color: #F2F2F2;
     padding: 1.5rem 2rem;
-    border-radius: 1rem; }
-  .element-fonctionnement span {
-    margin-left: -2.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px -5px #8c8c8c; }
+  .element-fonctionnement .element-chiffre {
+    margin-left: -2.8rem;
     background-color: #9356DC;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    padding: 0.3rem 0.6rem 0.2rem 0.55rem;
+    color: white;
+    font-size: 1rem; }
 
 .element-composer {
   padding: 0rem 0.8rem 0rem 0rem; }
 
-.fa-mobile-alt {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem; }
+.element-deguster {
+  padding-right: 0.5rem; }
 
-.fa-list-ul {
+.background-deguster p {
+  background-color: #f4eefc; }
+
+.fa-mobile-alt, .fa-list-ul {
   margin-left: 1.5rem;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  color: grey; }
 
 .fa-store {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem; }
+  margin-left: 1.4rem;
+  margin-right: 1.5rem;
+  color: #9356DC; }
+
+.restaurants h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 2rem 0rem 1rem 1rem; }
 
 @media only screen and (min-width: 769px) {
   .fonctionnement h2 {
     text-align: center; }
 
   .element-fonctionnement {
-    display: inline-block; } }
+    display: inline-block; }
+
+  footer {
+    display: flex;
+    justify-content: center; } }
+@media only screen and (max-width: 353px) {
+  .element-fonctionnement p {
+    font-size: 1rem;
+    padding: 1.5rem 1rem; }
+  .element-fonctionnement .element-chiffre {
+    margin-left: -1.8rem; } }

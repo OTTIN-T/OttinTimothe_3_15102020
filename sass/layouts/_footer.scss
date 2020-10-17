@@ -1,0 +1,33 @@
+// Partie footer
+footer{
+	background-color: #424141;
+
+		a{
+			color: white;
+		}
+
+		nav{
+			padding: 1rem 0rem 1rem 1rem;
+			font-family: $font-texte;			
+		}
+
+		li{
+			padding: 0.2rem
+		}
+}
+
+.titre-footer{
+	font-family: $font-titre;
+	color: white;
+	font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.fa-utensils{
+	padding-right: 1.2rem;
+}
+
+.fa-hands-helping{
+	padding-right: 1rem;
+	font-size: 0.8rem;
+}
