@@ -1,0 +1,72 @@
+
+/* Pour les petites ronds des chiffres 
+A modifier pour < 350px*/
+.element-fonctionnement span {
+    margin-left: -2.8rem;
+    background-color: #9356DC;
+    border-radius: 2rem;
+    padding: 0.3rem 0.7rem 0.2rem 0.65rem;
+    color: white;
+}
+
+/* Ajout marge entre les element
+a modififer pour < 356px
+Ajout box-shadow
+a modifier couleur */
+.element-fonctionnement{
+	margin: 0rem 1rem;
+	box-shadow: 0px 4px 8px -5px #00000059;
+}
+
+/* Modif couleur des fontawesome */
+.fa-list-ul, .fa-mobile-alt{
+	color: grey;
+}
+
+.fa-store{
+	color: #9356DC;
+}
+
+/* Rajout d'une class "background-deguster" à element-deguster
+Modif couleur background element-deguster*/
+.background-deguster p {
+    background-color: #a674e245;
+}
+
+
+/* Ajout d'une class restaurants sur la section des resto */
+.restaurants h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 2rem 0rem 1rem 1rem;
+}
+
+
+
+/* Footer 
+Le logo n'est pas le logo mais du texte A CHANGER*/
+footer{
+	background-color: #424141;
+}
+
+footer a{
+	color: white;
+}
+
+footer nav{
+	padding: 1rem 0rem 1rem 1rem;
+	font-family: 'Roboto-Regular';
+}
+
+footer li{
+	padding: 0.2rem
+}
+
+.fa-utensils{
+	padding-right: 1.2rem;
+}
+
+.fa-hand-helping{
+	padding-right: 1rem;
+	font-size: 0.8rem;
+}
