@@ -12,7 +12,10 @@ $font-texte:'Roboto Regular', Arial, "Arial Black", "Comic Sans MS","Times New R
 $font-sous-titre:'Roboto Bold', Arial, "Arial Black", "Comic Sans MS","Times New Roman", "Trebuchet MS";
 
 // Responsive
+$high-down: "only screen and (min-width: 1062px)";
 $medium-up: "only screen and (min-width: 769px)";
+$medium-medium: "only screen and (min-width: 600px)";
+$medium-down: "only screen and (min-width: 425px) and (max-width: 599px)";
 $small-down: "only screen and (max-width: 353px)";
 
 
