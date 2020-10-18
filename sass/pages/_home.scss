@@ -168,25 +168,34 @@ h2, h3{
     color: transparent;
 }
 
-.fa-heart {
-    position: relative;
-    z-index: 2;
-    display: flex !important;
-    justify-content: flex-end;
-    margin-top: -2rem;
-    font-size: 1.5rem;
+.far-coeur{
+	&:hover{
+		display: none !important;
+	}
+}
 
-    	&:focus-visible{
+.fa-heart {
+    // position: relative;
+    // z-index: 2;
+    // display: flex !important;
+    // justify-content: flex-end;
+    // margin-top: -2rem;
+    // font-size: 1.5rem;
+	  margin: 10px;
+	  padding: 30px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  transition: 0.5s;
+	  background: linear-gradient(90deg, var(--c1, $colour-primary), var(--c2, $colour-secondary) 51%, var(--c1, $colour-primary)) var(--x, 0)/ 200%;
+	  color: white;
+	  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	  box-shadow: 0 0 20px #eee;
+	  border-radius: 10px;
+
+    	&:hover{
 			background-image: linear-gradient($colour-primary,$colour-secondary);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			font-size: 1.55rem;
-    	}
-    	&:visited{
-    		background-image: linear-gradient($colour-primary,$colour-secondary);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			font-size: 1.55rem;
     	}
 }
 
