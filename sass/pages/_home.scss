@@ -191,7 +191,7 @@ h2, h3, .etiquette-nouveau{
 			background-image: linear-gradient($colour-primary,$colour-secondary);
 			// background-clip: text; Non pris par W3C...
 			-webkit-background-clip: text;
-			animation: coeur-remplissage 0.5s;
+			animation: coeur-remplissage 0.25s;
     	}
 }
 
@@ -207,6 +207,14 @@ h2, h3, .etiquette-nouveau{
 		a{
 			width: 40%;
 			margin-left: 8%;
+		}
+
+		img{
+			object-position: 0% 100% !important;
+		}
+
+		.img-enchante{
+			object-position: 0% 63% !important;
 		}
 	}
 
@@ -246,24 +254,6 @@ h2, h3, .etiquette-nouveau{
 	}
 }
 
-// Responsive >1062px
-@media #{$high-down}{
-	.restaurants{
-		a{
-			width: 40%;
-			margin-left: 8%;
-		}
-	}
-
-	.colonne-restaurant{
-		margin-left: 47%;
-	    margin-top: -44.2rem;
-
-	    a{
-	    	width: 75%;
-	    }
-	}
-}
 
 // Responsive >600px
 @media #{$medium-medium}{
