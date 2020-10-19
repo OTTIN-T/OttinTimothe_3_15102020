@@ -164,7 +164,7 @@ h2, h3, .etiquette-nouveau{
 }
 
 .etiquette-nouveau{
-	margin: 0rem 0rem 0rem 0rem;
+	margin: -45% 0% 0% 66%;
 	background-color: $colour-tertiary;
 	color: darken($colour-tertiary, 40%);
 	position: absolute;
@@ -191,35 +191,13 @@ h2, h3, .etiquette-nouveau{
 		background-image: linear-gradient($colour-primary,$colour-secondary);
 		background-clip: text;
 		-webkit-background-clip: text;
-		animation: coeur-remplissage 0.8s;
+		animation: coeur-remplissage 0.5s;
     }
 }
 
 .far-coeur{
 	&:active{
 		color: transparent;
-	}
-}
-
-// Responsive >769px
-@media #{$medium-up}{
-	.fonctionnement{
-		h2{
-			text-align: center;
-		}
-	}
-
-	.element-fonctionnement{
-		display: inline-block;
-	}
-
-	.restaurants h2{
-		text-align: center;
-	}
-
-	footer{
-		display:flex;
-		justify-content: center;
 	}
 }
 
@@ -242,6 +220,46 @@ h2, h3, .etiquette-nouveau{
 	}
 }
 
+// Responsive >826px
+@media #{$medium-extra-up}{
+	.etiquette-nouveau{
+		margin: -39% 0% 0% 83% !important;
+	} 
+}
+
+// Responsive >769px
+@media #{$medium-up}{
+	.fonctionnement{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.element-fonctionnement{
+		display: inline-block;
+	}
+
+	.restaurants h2{
+		text-align: center;
+	}
+
+	footer{
+		display:flex;
+		justify-content: center;
+	}
+
+	.etiquette-nouveau {
+    	margin: -39% 0% 0% 83% !important;
+	}
+}
+
+// Responsive >669px
+@media #{$medium-inter}{
+	.etiquette-nouveau {
+    	margin: -43% 0% 0% 80% !important;
+	}
+}
+
 // Responsive >600px
 @media #{$medium-medium}{
 	.restaurants{
@@ -249,6 +267,10 @@ h2, h3, .etiquette-nouveau{
 			height: 20rem;
 			object-position: 0% 69%;
 		}
+	}
+
+	.etiquette-nouveau {
+    	margin: -53% 0% 0% 78%;
 	}
 }
 
@@ -261,6 +283,17 @@ h2, h3, .etiquette-nouveau{
 		}
 	}
 
+	.etiquette-nouveau{
+		margin: -39% 0% 0% 75%;
+	}
+
+}
+
+// Responsive >384px
+@media #{$small-up}{
+	.etiquette-nouveau{
+		margin: -37% 0% 0% 70%;
+	}
 }
 
 // Responsive <353px

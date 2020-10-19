@@ -13,9 +13,12 @@ $font-sous-titre:'Roboto Bold', Arial, "Arial Black", "Comic Sans MS","Times New
 
 // Responsive
 $high-down: "only screen and (min-width: 1062px)";
+$medium-extra-up: "only screen and (min-width: 826px)";
 $medium-up: "only screen and (min-width: 769px)";
+$medium-inter: "only screen and (min-width: 669px)";
 $medium-medium: "only screen and (min-width: 600px)";
 $medium-down: "only screen and (min-width: 425px) and (max-width: 599px)";
+$small-up: "only screen and (min-width: 380px) and (max-width: 424px)";
 $small-down: "only screen and (max-width: 353px)";
 
 

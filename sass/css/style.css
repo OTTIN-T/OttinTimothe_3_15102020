@@ -274,7 +274,7 @@ h2, h3, .etiquette-nouveau {
     border-radius: 0rem 0rem 0.8rem 0.8rem; }
 
 .etiquette-nouveau {
-  margin: 0rem 0rem 0rem 0rem;
+  margin: -45% 0% 0% 66%;
   background-color: #99E2D0;
   color: #278870;
   position: absolute;
@@ -299,11 +299,24 @@ h2, h3, .etiquette-nouveau {
     background-image: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
-    animation: coeur-remplissage 0.8s; }
+    animation: coeur-remplissage 0.5s; }
 
 .far-coeur:active {
   color: transparent; }
 
+@media only screen and (min-width: 1062px) {
+  .restaurants a {
+    width: 40%;
+    margin-left: 8%; }
+
+  .colonne-restaurant {
+    margin-left: 47%;
+    margin-top: -44.2rem; }
+    .colonne-restaurant a {
+      width: 75%; } }
+@media only screen and (min-width: 826px) {
+  .etiquette-nouveau {
+    margin: -39% 0% 0% 83% !important; } }
 @media only screen and (min-width: 769px) {
   .fonctionnement h2 {
     text-align: center; }
@@ -316,25 +329,30 @@ h2, h3, .etiquette-nouveau {
 
   footer {
     display: flex;
-    justify-content: center; } }
-@media only screen and (min-width: 1062px) {
-  .restaurants a {
-    width: 40%;
-    margin-left: 8%; }
+    justify-content: center; }
 
-  .colonne-restaurant {
-    margin-left: 47%;
-    margin-top: -44.2rem; }
-    .colonne-restaurant a {
-      width: 75%; } }
+  .etiquette-nouveau {
+    margin: -39% 0% 0% 83% !important; } }
+@media only screen and (min-width: 669px) {
+  .etiquette-nouveau {
+    margin: -43% 0% 0% 80% !important; } }
 @media only screen and (min-width: 600px) {
   .restaurants img {
     height: 20rem;
-    object-position: 0% 69%; } }
+    object-position: 0% 69%; }
+
+  .etiquette-nouveau {
+    margin: -53% 0% 0% 78%; } }
 @media only screen and (min-width: 425px) and (max-width: 599px) {
   .restaurants img {
     height: 14rem;
-    object-position: 0% 69%; } }
+    object-position: 0% 69%; }
+
+  .etiquette-nouveau {
+    margin: -39% 0% 0% 75%; } }
+@media only screen and (min-width: 380px) and (max-width: 424px) {
+  .etiquette-nouveau {
+    margin: -37% 0% 0% 70%; } }
 @media only screen and (max-width: 353px) {
   .element-fonctionnement p {
     font-size: 1rem;
