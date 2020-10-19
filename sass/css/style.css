@@ -276,7 +276,11 @@ h2, h3, .etiquette-nouveau {
 .etiquette-nouveau {
   margin: 0rem 0rem 0rem 0rem;
   background-color: #99E2D0;
-  color: #278870; }
+  color: #278870;
+  position: absolute;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem; }
 
 .fa-heart {
   position: relative;
