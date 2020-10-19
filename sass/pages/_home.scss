@@ -164,8 +164,23 @@ h2, h3, .etiquette-nouveau{
 }
 
 .etiquette-nouveau{
-	color: white;
 	margin: 0rem 0rem 0rem 0rem;
+	background-color: $colour-tertiary;
+	color: darken($colour-tertiary, 40%);
+	position: absolute;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.fa-heart {
+    position: relative;
+    z-index: 2;
+    display: flex !important;
+    justify-content: flex-end;
+    margin-top: -2rem;
+    margin-right: 0.1rem;
+    font-size: 1.5rem;
 }
 
 .fas-coeur {
@@ -184,16 +199,6 @@ h2, h3, .etiquette-nouveau{
 	&:active{
 		color: transparent;
 	}
-}
-
-.fa-heart {
-    position: relative;
-    z-index: 2;
-    display: flex !important;
-    justify-content: flex-end;
-    margin-top: -2rem;
-    margin-right: 0.1rem;
-    font-size: 1.5rem;
 }
 
 // Responsive >769px

@@ -274,8 +274,18 @@ h2, h3, .etiquette-nouveau {
     border-radius: 0rem 0rem 0.8rem 0.8rem; }
 
 .etiquette-nouveau {
-  color: white;
-  margin: 0rem 0rem 0rem 0rem; }
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: #99E2D0;
+  color: #278870; }
+
+.fa-heart {
+  position: relative;
+  z-index: 2;
+  display: flex !important;
+  justify-content: flex-end;
+  margin-top: -2rem;
+  margin-right: 0.1rem;
+  font-size: 1.5rem; }
 
 .fas-coeur {
   color: transparent;
@@ -289,15 +299,6 @@ h2, h3, .etiquette-nouveau {
 
 .far-coeur:active {
   color: transparent; }
-
-.fa-heart {
-  position: relative;
-  z-index: 2;
-  display: flex !important;
-  justify-content: flex-end;
-  margin-top: -2rem;
-  margin-right: 0.1rem;
-  font-size: 1.5rem; }
 
 @media only screen and (min-width: 769px) {
   .fonctionnement h2 {
