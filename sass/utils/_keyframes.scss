@@ -1,0 +1,22 @@
+@keyframes coeur-remplissage {
+        0% {
+          background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 50%);
+          -webkit-background-clip: text;
+        }
+        25% {
+          background: linear-gradient(0deg, #FF79DA 20%, #9356DC 40%, white 30%);
+          -webkit-background-clip: text;
+        }
+        50% {
+          background: linear-gradient(0deg, #FF79DA 30%, #9356DC 60%, white 20%);
+          -webkit-background-clip: text;
+        }
+        75% {
+          background: linear-gradient(0deg, #FF79DA 40%, #9356DC 80%, white 10%);
+          -webkit-background-clip: text;
+        }
+        100% {
+          background: linear-gradient(0deg, #FF79DA 60%, #9356DC 100%, white 0%);
+          -webkit-background-clip: text;
+        }
+}
