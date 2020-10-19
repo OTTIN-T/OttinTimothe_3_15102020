@@ -274,7 +274,6 @@ h2, h3, .etiquette-nouveau {
     border-radius: 0rem 0rem 0.8rem 0.8rem; }
 
 .etiquette-nouveau {
-  margin: 0rem 0rem 0rem 0rem;
   margin: 4% 0% 0% 74%;
   background-color: #99E2D0;
   color: #278870;
@@ -300,7 +299,6 @@ h2, h3, .etiquette-nouveau {
     background-image: linear-gradient(#9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
-    animation: coeur-remplissage 0.8s; }
     animation: coeur-remplissage 0.5s; }
 
 .far-coeur:active {
@@ -329,12 +327,19 @@ h2, h3, .etiquette-nouveau {
   .restaurants h2 {
     text-align: center; }
 
-  .etiquette-nouveau {
-    margin: 4% 0% 0% 88% !important; }
-
   footer {
     display: flex;
     justify-content: center; } }
+@media only screen and (min-width: 1062px) {
+  .restaurants a {
+    width: 40%;
+    margin-left: 8%; }
+
+  .colonne-restaurant {
+    margin-left: 47%;
+    margin-top: -44.2rem; }
+    .colonne-restaurant a {
+      width: 75%; } }
 @media only screen and (min-width: 600px) {
   .restaurants img {
     height: 20rem;
