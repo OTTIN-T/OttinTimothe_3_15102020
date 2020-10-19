@@ -290,7 +290,11 @@ h2, h3, .etiquette-nouveau {
 .far-coeur:active {
   color: transparent; }
 
+.far-coeur:hover {
+  display: none !important; }
+
 .fa-heart {
+<<<<<<< HEAD
   position: relative;
   z-index: 2;
   display: flex !important;
@@ -298,6 +302,35 @@ h2, h3, .etiquette-nouveau {
   margin-top: -2rem;
   margin-right: 0.1rem;
   font-size: 1.5rem; }
+<<<<<<< HEAD
+=======
+  .fa-heart:focus-visible {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.55rem; }
+  .fa-heart:visited {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.55rem; }
+=======
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: linear-gradient(90deg, var(--c1, #9356DC), var(--c2, #FF79DA) 51%, var(--c1, #9356DC)) var(--x, 0)/200%;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px; }
+  .fa-heart:hover {
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+>>>>>>> parent of 7b98198... Validation effet coeur. Ajout fichier _keyframes.scss.
+>>>>>>> 2cc6d27... Revert "Validation effet coeur. Ajout fichier _keyframes.scss."
 
 @media only screen and (min-width: 769px) {
   .fonctionnement h2 {
