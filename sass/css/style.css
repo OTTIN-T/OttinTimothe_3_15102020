@@ -488,6 +488,10 @@ section, main, footer {
 
   .restaurants h2 {
     text-align: center; }
+  .restaurants img {
+    height: 20rem; }
+  .restaurants .img-enchante {
+    object-position: 0% 60%; }
 
   .etiquette-nouveau {
     margin: 4% 0% 0% 88%; }
@@ -504,6 +508,8 @@ section, main, footer {
   .restaurants img {
     height: 22rem;
     object-position: 0% 69%; }
+  .restaurants .img-enchante {
+    object-position: 0% 60%; }
 
   .etiquette-nouveau {
     margin: 4% 0% 0% 85%; } }

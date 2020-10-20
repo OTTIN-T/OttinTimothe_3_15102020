@@ -459,6 +459,14 @@ section, main, footer{
 		h2{
 			text-align: center;
 		}
+
+		img{
+			height: 20rem;
+		}
+
+		.img-enchante{
+			object-position: 0% 60%;
+		}
 	}
 
 	.etiquette-nouveau{
@@ -486,6 +494,10 @@ section, main, footer{
 		img{
 			height: 22rem;
 			object-position: 0% 69%;
+		}
+
+		.img-enchante{
+			object-position: 0% 60%;
 		}
 	}
 
