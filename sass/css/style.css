@@ -40,6 +40,30 @@ td, th {
 td:not([align]), th:not([align]) {
   text-align: left; }
 
+@keyframes vague {
+  0%, 40% {
+    transform: translate(0, 0);
+    background-color: #FF79DA;
+    opacity: 1; }
+  10% {
+    transform: translate(0, -15px);
+    background-color: #99E2D0;
+    opacity: 1; }
+  100% {
+    transform: translate(0, 0);
+    background-color: #FF79DA;
+    opacity: 0; } }
+@keyframes background-vague {
+  0%, 90% {
+    transform: translate(0%);
+    z-index: 99;
+    display: flex;
+    opacity: 1; }
+  100% {
+    transform: translate(-100%);
+    z-index: 1;
+    display: none;
+    opacity: 0; } }
 @keyframes coeur-remplissage {
   0% {
     background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 50%);
@@ -126,7 +150,8 @@ header {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   box-shadow: 0px -3px 6px 3px #7b7777;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
 
 footer {
   background-color: #424141; }
@@ -156,6 +181,48 @@ p {
 
 h2, h3, .etiquette-nouveau {
   font-family: "Roboto Bold", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS"; }
+
+section, main, footer {
+  z-index: 2;
+  position: relative; }
+
+.loader {
+  animation: background-vague 3.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  position: fixed;
+  padding-top: 113%;
+  display: flex; }
+  .loader span {
+    transition: all 500ms ease;
+    background: #9356DC;
+    box-shadow: 0.1rem 0.2rem 0.3rem #999;
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+    animation: vague 1.5s ease 2;
+    opacity: 0;
+    padding-left: 2rem;
+    margin: 0 0.2rem; }
+    .loader span:nth-child(1) {
+      animation-delay: 0ms; }
+    .loader span:nth-child(2) {
+      animation-delay: 100ms; }
+    .loader span:nth-child(3) {
+      animation-delay: 200ms; }
+    .loader span:nth-child(4) {
+      animation-delay: 300ms; }
+    .loader span:nth-child(5) {
+      animation-delay: 400ms; }
+    .loader span:nth-child(6) {
+      animation-delay: 500ms; }
+    .loader span:nth-child(7) {
+      animation-delay: 600ms; }
+    .loader span:nth-child(8) {
+      animation-delay: 700ms; }
 
 .localisation {
   display: flex;
@@ -253,14 +320,14 @@ h2, h3, .etiquette-nouveau {
     padding: 2rem 0rem 1rem 1rem; }
   .restaurants a {
     display: block;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     position: relative;
-    z-index: 1; }
+    z-index: 3; }
   .restaurants img {
     border-radius: 0.8rem;
     width: 100%;
-    height: 11rem;
+    height: 14rem;
     object-fit: cover;
     object-position: 0% 79%; }
   .restaurants figure {
@@ -284,7 +351,7 @@ h2, h3, .etiquette-nouveau {
 
 .fa-heart {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex !important;
   justify-content: flex-end;
   margin-top: -2rem;
@@ -303,24 +370,116 @@ h2, h3, .etiquette-nouveau {
 .far-coeur:active {
   color: transparent; }
 
-@media only screen and (min-width: 1062px) {
+@media only screen and (min-width: 2001px) {
+  .loader {
+    padding-top: 20%; }
+    .loader span {
+      margin: 0 2rem; }
+
+  .fonctionnement h2 {
+    text-align: center; }
+
+  .element-fonctionnement {
+    display: inline-block; }
+
+  .restaurants h2 {
+    text-align: center; }
   .restaurants a {
     width: 40%;
     margin-left: 8%; }
   .restaurants img {
-    object-position: 0% 100% !important; }
+    object-position: 0% 70%;
+    height: 25rem; }
   .restaurants .img-enchante {
-    object-position: 0% 63% !important; }
+    object-position: 0% 61%; }
 
   .colonne-restaurant {
     margin-left: 47%;
-    margin-top: -44.2rem; }
+    margin-top: -54.25rem; }
     .colonne-restaurant a {
       width: 75%; }
 
   .etiquette-nouveau {
-    margin: 4% 0% 0% 88% !important; } }
-@media only screen and (min-width: 769px) {
+    margin: 4% 0% 0% 85%; }
+
+  footer {
+    display: flex;
+    justify-content: center; } }
+@media only screen and (min-width: 1501px) and (max-width: 2000px) {
+  .loader {
+    padding-top: 20%; }
+    .loader span {
+      margin: 0 1.5rem; }
+
+  .fonctionnement h2 {
+    text-align: center; }
+
+  .element-fonctionnement {
+    display: inline-block; }
+
+  .restaurants h2 {
+    text-align: center; }
+  .restaurants a {
+    width: 40%;
+    margin-left: 8%; }
+  .restaurants img {
+    object-position: 0% 70%;
+    height: 25rem; }
+  .restaurants .img-enchante {
+    object-position: 0% 61%; }
+
+  .colonne-restaurant {
+    margin-left: 47%;
+    margin-top: -54.25rem; }
+    .colonne-restaurant a {
+      width: 75%; }
+
+  .etiquette-nouveau {
+    margin: 4% 0% 0% 85%; }
+
+  footer {
+    display: flex;
+    justify-content: center; } }
+@media only screen and (min-width: 1062px) and (max-width: 1500px) {
+  .loader {
+    padding-top: 25%; }
+    .loader span {
+      margin: 0 1rem; }
+
+  .fonctionnement h2 {
+    text-align: center; }
+
+  .element-fonctionnement {
+    display: inline-block; }
+
+  .restaurants h2 {
+    text-align: center; }
+  .restaurants a {
+    width: 40%;
+    margin-left: 8%; }
+  .restaurants img {
+    object-position: 0% 100%; }
+  .restaurants .img-enchante {
+    object-position: 0% 63%; }
+
+  .colonne-restaurant {
+    margin-left: 47%;
+    margin-top: -32.25rem; }
+    .colonne-restaurant a {
+      width: 75%; }
+
+  .etiquette-nouveau {
+    margin: 4% 0% 0% 85%; }
+
+  footer {
+    display: flex;
+    justify-content: center; } }
+@media only screen and (min-width: 769px) and (max-width: 1061px) {
+  .loader {
+    padding-top: 41%; }
+    .loader span {
+      margin: 0 1rem; }
+
   .fonctionnement h2 {
     text-align: center; }
 
@@ -330,21 +489,35 @@ h2, h3, .etiquette-nouveau {
   .restaurants h2 {
     text-align: center; }
 
+  .etiquette-nouveau {
+    margin: 4% 0% 0% 88%; }
+
   footer {
     display: flex;
     justify-content: center; } }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .loader {
+    padding-top: 55%; }
+    .loader span {
+      margin: 0 0.5rem; }
+
   .restaurants img {
-    height: 20rem;
+    height: 22rem;
     object-position: 0% 69%; }
 
   .etiquette-nouveau {
-    margin: 4% 0% 0% 85% !important; } }
+    margin: 4% 0% 0% 85%; } }
 @media only screen and (min-width: 425px) and (max-width: 599px) {
+  .loader {
+    padding-top: 100%; }
+
   .restaurants img {
-    height: 14rem;
+    height: 16rem;
     object-position: 0% 69%; } }
 @media only screen and (max-width: 353px) {
+  .loader {
+    padding-top: 130%; }
+
   .element-fonctionnement p {
     font-size: 1rem;
     padding: 1.5rem 1rem; }

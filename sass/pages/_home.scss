@@ -6,6 +6,64 @@ h2, h3, .etiquette-nouveau{
 	font-family: $font-sous-titre;
 }
 
+section, main, footer{
+	z-index: 2;
+	position: relative;
+}
+
+// Spinner loader
+.loader{
+	animation: background-vague 3.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    position: fixed;
+    padding-top: 113%;;
+    display: flex;
+
+    span{
+		transition: all 500ms ease;
+		background: $colour-primary;
+		box-shadow: 0.1rem 0.2rem 0.3rem #999;
+		height: 1rem;
+		width: 1rem;  
+		display: inline-block;
+		border-radius: 1rem;
+		animation: vague 1.5s ease 2;
+		opacity: 0;
+		padding-left: 2rem;
+		margin: 0 0.2rem;
+
+			&:nth-child(1){
+				animation-delay: 0ms;
+			}
+			&:nth-child(2){
+				animation-delay: 100ms;
+			}
+			&:nth-child(3){
+				animation-delay: 200ms;
+			}
+			&:nth-child(4){
+				animation-delay: 300ms;
+			}
+			&:nth-child(5){
+				animation-delay: 400ms;
+			}
+			&:nth-child(6){
+				animation-delay: 500ms;
+			}
+			&:nth-child(7){
+				animation-delay: 600ms;
+			}
+			&:nth-child(8){
+				animation-delay: 700ms;
+			}
+	} 
+
+}
+
+
 // Partie localisation
 .localisation{
 	display: flex;
@@ -135,16 +193,16 @@ h2, h3, .etiquette-nouveau{
 	
 	a{
 		display: block;
-		width: 80%; 
-		margin-left: 10%;
+		width: 90%; 
+		margin-left: 5%;
 		position: relative;
-    	z-index: 1;
+    	z-index: 3;
 	}
 
 	img{
 		border-radius: 0.8rem;
 		width: 100%;
-    	height: 11rem;
+    	height: 14rem;
 		object-fit: cover;
 		object-position: 0% 79%;
 	}
@@ -175,7 +233,7 @@ h2, h3, .etiquette-nouveau{
 
 .fa-heart {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     display: flex !important;
     justify-content: flex-end;
     margin-top: -2rem;
@@ -201,39 +259,16 @@ h2, h3, .etiquette-nouveau{
 	}
 }
 
-// Responsive >1062px
-@media #{$high-down}{
-	.restaurants{
-		a{
-			width: 40%;
-			margin-left: 8%;
-		}
+// Responsive (min-width: 2001px)
+@media #{$xtra-large}{
+	.loader{
+		padding-top: 20%;
 
-		img{
-			object-position: 0% 100% !important;
-		}
-
-		.img-enchante{
-			object-position: 0% 63% !important;
+		span{
+			margin: 0 2rem;
 		}
 	}
 
-	.colonne-restaurant{
-		margin-left: 47%;
-	    margin-top: -44.2rem;
-
-	    a{
-	    	width: 75%;
-	    }
-	}
-
-	.etiquette-nouveau{
-		margin: 4% 0% 0% 88% !important;
-	}
-}
-
-// Responsive >769px
-@media #{$medium-up}{
 	.fonctionnement{
 		h2{
 			text-align: center;
@@ -244,8 +279,190 @@ h2, h3, .etiquette-nouveau{
 		display: inline-block;
 	}
 
-	.restaurants h2{
-		text-align: center;
+	.restaurants{
+		h2{
+			text-align: center;
+		}
+
+		a{
+			width: 40%;
+			margin-left: 8%;
+		}
+
+		img{
+			object-position: 0% 70%;
+			height: 25rem;
+		}
+
+		.img-enchante{
+			object-position: 0% 61%;
+		}
+	}
+
+	.colonne-restaurant{
+		margin-left: 47%;
+	    margin-top: -54.25rem;
+
+	    a{
+	    	width: 75%;
+	    }
+	}
+
+	.etiquette-nouveau{
+		margin: 4% 0% 0% 85%;
+	}
+
+	footer{
+		display:flex;
+		justify-content: center;
+	}
+}
+
+// Responsive (min-width: 1501px) and (max-width: 2000px)
+@media #{$high-up}{
+	.loader{
+		padding-top: 20%;
+
+		span{
+			margin: 0 1.5rem;
+		}		
+	}
+
+	.fonctionnement{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.element-fonctionnement{
+		display: inline-block;
+	}
+
+	.restaurants{
+		h2{
+			text-align: center;
+		}
+
+		a{
+			width: 40%;
+			margin-left: 8%;
+		}
+
+		img{
+			object-position: 0% 70%;
+			height: 25rem;
+		}
+
+		.img-enchante{
+			object-position: 0% 61%;
+		}
+	}
+
+	.colonne-restaurant{
+		margin-left: 47%;
+	    margin-top: -54.25rem;
+
+	    a{
+	    	width: 75%;
+	    }
+	}
+
+	.etiquette-nouveau{
+		margin: 4% 0% 0% 85%;
+	}
+
+	footer{
+		display:flex;
+		justify-content: center;
+	}
+}
+
+// Responsive (min-width: 1062px) and (max-width: 1500px)
+@media #{$high-down}{
+	.loader{
+		padding-top: 25%;
+
+		span{
+			margin: 0 1rem;
+		}
+	}
+
+	.fonctionnement{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.element-fonctionnement{
+		display: inline-block;
+	}
+
+	.restaurants{
+		h2{
+			text-align: center;
+		}
+
+		a{
+			width: 40%;
+			margin-left: 8%;
+		}
+
+		img{
+			object-position: 0% 100%;
+		}
+
+		.img-enchante{
+			object-position: 0% 63%;
+		}
+	}
+
+	.colonne-restaurant{
+		margin-left: 47%;
+	    margin-top: -32.25rem;
+
+	    a{
+	    	width: 75%;
+	    }
+	}
+
+	.etiquette-nouveau{
+		margin: 4% 0% 0% 85%;
+	}
+
+	footer{
+		display:flex;
+		justify-content: center;
+	}
+}
+
+// Responsive (min-width: 769px) and (max-width: 1061px)
+@media #{$medium-up}{
+	.loader{
+		padding-top: 41%;
+
+		span{
+			margin: 0 1rem;
+		}
+	}
+
+	.fonctionnement{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.element-fonctionnement{
+		display: inline-block;
+	}
+
+	.restaurants{
+		h2{
+			text-align: center;
+		}
+	}
+
+	.etiquette-nouveau{
+		margin: 4% 0% 0% 88%;
 	}
 
 	footer{
@@ -255,25 +472,37 @@ h2, h3, .etiquette-nouveau{
 }
 
 
-// Responsive >600px
+// Responsive (min-width: 600px) and (max-width: 768px)
 @media #{$medium-medium}{
+	.loader{
+		padding-top: 55%;
+
+		span{
+			margin: 0 0.5rem;
+		}
+	}
+
 	.restaurants{
 		img{
-			height: 20rem;
+			height: 22rem;
 			object-position: 0% 69%;
 		}
 	}
 
 	.etiquette-nouveau{
-		margin: 4% 0% 0% 85% !important;
+		margin: 4% 0% 0% 85%;
 	}
 }
 
-// Responsive >425px
+// Responsive (min-width: 425px) and (max-width: 599px)
 @media #{$medium-down}{
+	.loader{
+		padding-top: 100%;
+	}
+
 	.restaurants{
 		img{
-			height: 14rem;
+			height: 16rem;
 			object-position: 0% 69%;
 		}
 	}
@@ -281,6 +510,10 @@ h2, h3, .etiquette-nouveau{
 
 // Responsive <353px
 @media #{$small-down}{
+	.loader{
+		padding-top: 130%;
+	}
+
 	.element-fonctionnement{
 		p{
 			font-size: 1rem;
