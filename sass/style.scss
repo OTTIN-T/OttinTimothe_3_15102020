@@ -1,6 +1,6 @@
 // Importation du fichier reset
 @import "./base/reset.scss";
-
+@import "./layouts/responsive";
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
@@ -12,9 +12,7 @@
 
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./layouts/navigations";
 @import "./layouts/container"; 
-@import "./layouts/responsive";
+
 
 @import "./pages/home";
-

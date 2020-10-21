@@ -181,7 +181,7 @@ section, main, footer{
 }
 
 // Partie restaurants
-.restaurants{
+#restaurants{
 	background-color: $colour-background;
 	padding-bottom: 2rem;
 
@@ -279,14 +279,14 @@ section, main, footer{
 		display: inline-block;
 	}
 
-	.restaurants{
+	#restaurants{
 		h2{
 			text-align: center;
 		}
 
 		a{
 			width: 40%;
-			margin-left: 8%;
+			margin-left: 9%;
 		}
 
 		img{
@@ -304,7 +304,7 @@ section, main, footer{
 	    margin-top: -54.25rem;
 
 	    a{
-	    	width: 75%;
+	    	width: 75% !important;
 	    }
 	}
 
@@ -338,14 +338,14 @@ section, main, footer{
 		display: inline-block;
 	}
 
-	.restaurants{
+	#restaurants{
 		h2{
 			text-align: center;
 		}
 
 		a{
 			width: 40%;
-			margin-left: 8%;
+			margin-left: 9%;
 		}
 
 		img{
@@ -363,7 +363,7 @@ section, main, footer{
 	    margin-top: -54.25rem;
 
 	    a{
-	    	width: 75%;
+	    	width: 75% !important;
 	    }
 	}
 
@@ -397,14 +397,14 @@ section, main, footer{
 		display: inline-block;
 	}
 
-	.restaurants{
+	#restaurants{
 		h2{
 			text-align: center;
 		}
 
 		a{
 			width: 40%;
-			margin-left: 8%;
+			margin-left: 9%;
 		}
 
 		img{
@@ -421,7 +421,7 @@ section, main, footer{
 	    margin-top: -32.25rem;
 
 	    a{
-	    	width: 75%;
+	    	width: 75% !important;
 	    }
 	}
 
@@ -455,7 +455,7 @@ section, main, footer{
 		display: inline-block;
 	}
 
-	.restaurants{
+	#restaurants{
 		h2{
 			text-align: center;
 		}
@@ -490,7 +490,7 @@ section, main, footer{
 		}
 	}
 
-	.restaurants{
+	#restaurants{
 		img{
 			height: 22rem;
 			object-position: 0% 69%;
@@ -512,7 +512,7 @@ section, main, footer{
 		padding-top: 100%;
 	}
 
-	.restaurants{
+	#restaurants{
 		img{
 			height: 16rem;
 			object-position: 0% 69%;
