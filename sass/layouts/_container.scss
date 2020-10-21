@@ -1,13 +1,21 @@
 // Partie image
-.img-enchante-menu{
+main{
 	img{
 		width: 100%;
-	    height: 18rem;
-	    object-fit: cover;
-	    object-position: 0% 63%;
+		height: 18rem;
+		object-fit: cover;
+		object-position: 0% 63%;		
+	}
+
+	.img-enchante-menu{
+		img{
+			width: 100%;
+		    height: 18rem;
+		    object-fit: cover;
+		    object-position: 0% 63%;
+		}
 	}
 }
-
 
 // Partie menu
 .menu{
@@ -31,6 +39,7 @@
 
 		article {
 		    margin-top: 2rem;
+		    animation: fade-menu 1s;
 		}
 }
 
@@ -42,6 +51,7 @@
     background-color: white;
     border-radius: 0.8rem;
     box-shadow: 0rem 0.4rem 0.8rem -0.5rem darken($colour-background, 40%);
+    animation: fade-div 2s;
 
     	h3 {
 		    padding-bottom: 0.3rem;
@@ -79,5 +89,110 @@
 			background-image: linear-gradient(lighten($colour-secondary, 7%),lighten($colour-primary, 7%));
 			box-shadow: 0px 5px 10px 0px darken($colour-background, 40%)
 		}
+	}
+}
+
+// Responsive (min-width: 2001px)
+@media #{$xtra-large}{
+	 .menu{
+	 	text-align: center;
+
+	 	article{
+	 		display: inline-grid;
+	 	}
+	 }
+
+	 .div-background{
+	 	text-align: left;
+
+	 	span{
+	 		padding-left: 1rem;
+	 	}
+
+	 	.prix{
+	 		margin-top: 0rem;
+	 	}
+	 }
+}
+
+// Responsive (min-width: 1501px) and (max-width: 2000px)
+@media #{$high-up}{
+	 .menu{
+	 	text-align: center;
+
+	 	article{
+	 		display: inline-grid;
+	 	}
+	 }
+
+	 .div-background{
+	 	text-align: left;
+
+	 	span{
+	 		padding-left: 1rem;
+	 	}
+
+	 	.prix{
+	 		margin-top: 0rem;
+	 	}	 		 	
+	 }
+}
+
+// Responsive (min-width: 1062px) and (max-width: 1500px)
+@media #{$high-down}{
+	 .menu{
+	 	text-align: center;
+
+	 	article{
+	 		display: inline-grid;
+	 	}
+	 }
+
+	 .div-background{
+	 	text-align: left;
+
+	 	span{
+	 		padding-left: 1rem;
+	 	}
+
+	 	.prix{
+	 		margin-top: 0rem;
+	 	}	 	
+	 }
+}
+
+// Responsive (min-width: 769px) and (max-width: 1061px)
+@media #{$medium-up}{
+	.menu{
+		display: grid;
+    	justify-content: center;
+	}
+	
+	.div-background{
+		span{
+			padding: 0 0.5rem;	
+		}
+
+	 	.prix{
+	 		margin-top: 0rem;
+	 	}
+	}
+}
+
+// (min-width: 600px) and (max-width: 768px)
+@media #{$medium-medium}{
+	.menu{
+		display: grid;
+    	justify-content: center;
+	}
+
+	.div-background{
+		span{
+			padding: 0 0.5rem;	
+		}
+
+	 	.prix{
+	 		margin-top: 0rem;
+	 	}
 	}
 }

@@ -1,5 +1,4 @@
 // Animation spinner loader
-
 @keyframes vague{
   0%, 40% { 
     transform: translate(0, 0);
@@ -18,7 +17,7 @@
   }
 }
 
-
+// Animation background spinner
 @keyframes background-vague{
   0%, 90%{
     transform: translate(0%);
@@ -57,4 +56,33 @@
           background: linear-gradient(0deg, #FF79DA 60%, #9356DC 100%, white 0%);
           -webkit-background-clip: text;
         }
+}
+
+// Animation element menu
+@keyframes fade-menu{
+  0%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-div{
+  0%{
+    opacity: 0;
+    transform: translateY(100%)
+  }
+
+  60%{
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%)
+  }
 }
