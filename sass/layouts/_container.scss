@@ -1,3 +1,5 @@
+// Body
+
 // Partie image
 main{
 	img{
@@ -23,6 +25,8 @@ main{
 	padding: 1.5rem 1rem 2rem 1rem;
 	margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
+    display: grid;
+    justify-content: center;
 
     	h1{
     		font-family: $font-titre;
@@ -56,20 +60,69 @@ main{
     	h3 {
 		    padding-bottom: 0.3rem;
 		}
-
-		p{
-		    display: flex;
-		    justify-content: space-between;			
-		}
-
-		span{
-			font-family: $font-sous-titre;
-		}
-
-		.prix{
-			margin-top: 1.2rem;
-		}
 }
+
+.div-accompagnement{
+			display: flex;
+			justify-content: space-between;
+
+				p{
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					max-width: 85%;			
+				}
+
+				span{
+					font-family: $font-sous-titre;
+					// padding-left: 0.5rem;
+				}
+
+			&:hover,{
+	   			animation: prix-effect 1s; 
+	   			margin-right: 15%;			
+			}
+		}
+
+.check-background{
+	background-color: #99E2D0;
+    display: flex;
+    justify-content: flex-end;
+    margin: -0.8rem 0rem -0.5rem 14rem;
+    border-radius: 0 0.8rem 0.8rem 0;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    position: absolute;
+}
+
+.fa-check-circle{
+	   position: relative;
+       color: white;
+
+    	 &:hover{
+    	 	animation: check-effect 1s;
+    	 }
+}
+
+
+
+@keyframes check-effect{
+	0%{
+		transform:translate(100%) rotate(0deg);
+	}
+
+	80%{
+		opacity: 0.5;
+
+	}
+
+	100%{
+		transform: translate(0%) rotate(360deg);
+		opacity: 1;
+	}
+}
+
+
+
 
 // Partie bouton commander
 .btn-commander{
@@ -95,6 +148,7 @@ main{
 // Responsive (min-width: 2001px)
 @media #{$xtra-large}{
 	 .menu{
+	 	display: block;
 	 	text-align: center;
 
 	 	article{
@@ -118,6 +172,7 @@ main{
 // Responsive (min-width: 1501px) and (max-width: 2000px)
 @media #{$high-up}{
 	 .menu{
+	 	display: block;
 	 	text-align: center;
 
 	 	article{
@@ -141,6 +196,7 @@ main{
 // Responsive (min-width: 1062px) and (max-width: 1500px)
 @media #{$high-down}{
 	 .menu{
+	 	display: block;
 	 	text-align: center;
 
 	 	article{
@@ -163,11 +219,6 @@ main{
 
 // Responsive (min-width: 769px) and (max-width: 1061px)
 @media #{$medium-up}{
-	.menu{
-		display: grid;
-    	justify-content: center;
-	}
-	
 	.div-background{
 		span{
 			padding: 0 0.5rem;	
@@ -179,13 +230,8 @@ main{
 	}
 }
 
-// (min-width: 600px) and (max-width: 768px)
+// Responsive (min-width: 600px) and (max-width: 768px)
 @media #{$medium-medium}{
-	.menu{
-		display: grid;
-    	justify-content: center;
-	}
-
 	.div-background{
 		span{
 			padding: 0 0.5rem;	
@@ -194,5 +240,12 @@ main{
 	 	.prix{
 	 		margin-top: 0rem;
 	 	}
+	}
+}
+
+// Responsive (min-width: 425px) and (max-width: 599px)"*
+@media #{$small-down}{
+	.menu{
+		display: block;
 	}
 }

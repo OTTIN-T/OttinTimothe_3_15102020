@@ -20,14 +20,14 @@
 // Animation background spinner
 @keyframes background-vague{
   0%, 90%{
-    transform: translate(0%);
+    transform: translateY(0%);
     z-index: 99;
     display: flex;
     opacity: 1;
   }
 
   100%{
-    transform: translate(-100%);
+    transform: translateY(-100%);
     z-index: 1;
     display: none;
     opacity: 0;
@@ -37,7 +37,7 @@
 // Annimation coeur 
 @keyframes coeur-remplissage {
         0% {
-          background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 50%);
+          background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 40%);
           -webkit-background-clip: text;
         }
         25% {
@@ -84,5 +84,16 @@
   100%{
     opacity: 1;
     transform: translateY(0%)
+  }
+}
+
+// Effet prix
+@keyframes prix-effect{
+  0%{
+    margin-right: 0%;
+  }
+
+  100%{
+    margin-right: 15%;
   }
 }
