@@ -1,0 +1,41 @@
+// Bouton explorer
+.btn-explorer{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 3rem 0rem;
+
+	p{
+		background-image: linear-gradient($colour-secondary,$colour-primary);
+	    padding: 1rem;
+	    border-radius: 2rem;
+	    color: white;
+	    box-shadow: 0px 5px 10px 0px darken($colour-background, 25%);
+
+	    &:hover{
+			background-image: linear-gradient(lighten($colour-secondary, 7%),lighten($colour-primary, 7%));
+			box-shadow: 0px 5px 10px 0px darken($colour-background, 40%)
+		}
+	}
+}
+
+// Bouton commander
+.btn-commander{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    padding: 2rem 0rem 1rem 0rem;
+
+	p{
+		background-image: linear-gradient($colour-secondary,$colour-primary);
+	    padding: 0.8rem 2.5rem;;
+	    border-radius: 2rem;
+	    color: white;
+	    box-shadow: 0px 5px 10px 0px darken($colour-background, 25%);
+
+	    &:hover{
+			background-image: linear-gradient(lighten($colour-secondary, 7%),lighten($colour-primary, 7%));
+			box-shadow: 0px 5px 10px 0px darken($colour-background, 40%)
+		}
+	}
+}

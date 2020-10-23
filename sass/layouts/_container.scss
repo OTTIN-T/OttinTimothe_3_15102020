@@ -62,7 +62,7 @@ main{
 		    padding-bottom: 0.3rem;
 		}
 
-		&:hover{
+		&:active{
 			.div-accompagnement{
 				animation: prix-effect 1s; 
 	   			margin-right: 15%;
@@ -111,27 +111,6 @@ main{
 			position: relative;
 			color: white;
 		}
-}
-
-// Partie bouton commander
-.btn-commander{
-	text-align: center;
-	display: flex;
-    justify-content: center;
-    padding: 2rem 0rem 1rem 0rem;
-
-	p{
-		background-image: linear-gradient($colour-secondary,$colour-primary);
-	    padding: 0.8rem 2.5rem;;
-	    border-radius: 2rem;
-	    color: white;
-	    box-shadow: 0px 5px 10px 0px darken($colour-background, 25%);
-
-	    &:hover{
-			background-image: linear-gradient(lighten($colour-secondary, 7%),lighten($colour-primary, 7%));
-			box-shadow: 0px 5px 10px 0px darken($colour-background, 40%)
-		}
-	}
 }
 
 // Responsive (min-width: 2001px)
