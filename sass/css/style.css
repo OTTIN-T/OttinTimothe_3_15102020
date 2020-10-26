@@ -299,7 +299,7 @@ main .img-enchante-menu img {
     animation: prix-effect 1s;
     margin-right: 15%; }
   .div-background:active .check-background {
-    animation: background-effect 1s 0.1s;
+    animation: background-effect 1s;
     display: flex; }
   .div-background:active .fa-check-circle {
     animation: check-effect 1s 0.2s; }
