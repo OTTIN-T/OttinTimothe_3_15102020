@@ -299,7 +299,8 @@ main .img-enchante-menu img {
     animation: prix-effect 1s;
     margin-right: 15%; }
   .div-background:active .check-background {
-    animation: background-effect 1s 0.1s; }
+    animation: background-effect 1s 0.1s;
+    display: flex; }
   .div-background:active .fa-check-circle {
     animation: check-effect 1s 0.2s; }
   .div-background:active p, .div-background:active h3 {
@@ -314,8 +315,6 @@ main .img-enchante-menu img {
     max-width: 85%; }
   .div-accompagnement span {
     font-family: "Roboto Bold", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS"; }
-  .div-accompagnement:active .check-background {
-    display: flex; }
 
 .check-background {
   background-color: #99E2D0;
