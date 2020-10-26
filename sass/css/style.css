@@ -333,7 +333,8 @@ main .img-enchante-menu img {
     height: 47rem; }
     .menu article {
       display: inline-grid;
-      width: 31rem; }
+      width: 31rem;
+      margin: 0 6rem; }
 
   .div-background {
     text-align: left; }
@@ -350,7 +351,8 @@ main .img-enchante-menu img {
     text-align: center; }
     .menu article {
       display: inline-grid;
-      width: 21rem; }
+      width: 24rem;
+      margin: 0 3rem; }
 
   .div-background {
     text-align: left; }
@@ -358,17 +360,15 @@ main .img-enchante-menu img {
       margin-top: 0rem; }
 
   .check-background {
-    margin: -0.8rem 0rem -0.5rem 17.4rem; }
-
-  .check-background-deux {
-    margin-left: 18.7rem; } }
+    margin: -0.8rem 0rem -0.5rem 20.4rem; } }
 @media only screen and (min-width: 1062px) and (max-width: 1500px) {
   .menu {
     display: block;
     text-align: center; }
     .menu article {
       display: inline-grid;
-      width: 21rem; }
+      width: 24rem;
+      margin: 0 3rem; }
 
   .div-background {
     text-align: left; }
@@ -378,7 +378,7 @@ main .img-enchante-menu img {
       margin-top: 0rem; }
 
   .check-background {
-    margin: -0.8rem 0rem -0.5rem 17.4rem; }
+    margin: -0.8rem 0rem -0.5rem 20.3rem; }
 
   .check-background-deux {
     margin-left: 18.7rem; } }
