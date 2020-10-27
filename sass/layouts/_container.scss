@@ -1,5 +1,3 @@
-// Body
-
 // Partie image
 main{
 	img{
@@ -31,7 +29,7 @@ main{
     	h1{
     		font-family: $font-titre;
     		font-size: 1.5rem;
-    		margin: 0rem 1rem 2rem 0rem;
+    		margin: 0rem 1.1rem 2rem 0rem;
     	}
 
     	h2 {
@@ -64,7 +62,7 @@ main{
 		    max-width: 85%;	
 		}		
 
-		&:active{
+		&:hover{
 			.div-accompagnement{
 				animation: prix-effect 1s; 
 	   			margin-right: 15%;
@@ -104,10 +102,6 @@ main{
 	background-color: #99E2D0;
 	display: none;
 	justify-content: flex-end;
-	// margin: -0.8rem 0rem -0.5rem 17.65rem;
-	// border-radius: 0 0.8rem 0.8rem 0;
-	// padding: 1.5rem 1rem 1.48rem 1rem;
-	// position: absolute;
 	margin: -4rem 0rem -1rem 17.5rem;
     padding: 2rem 2rem 2rem 0rem;
     position: relative;

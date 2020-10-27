@@ -227,12 +227,13 @@ section, main, footer{
     color: transparent;
     margin-left: -1.5rem;
     margin: 0rem 0rem 0rem -1.5rem !important;
-        &:active{
+        &:hover{
 			background-image: linear-gradient($colour-primary,$colour-secondary);
 			// background-clip: text; Non pris par W3C...
 			-webkit-background-clip: text;
 			animation: coeur-remplissage 0.25s;
-    	}
+			transform: scale(1.1, 1.11);    	
+		}
 }
 
 .far-coeur{

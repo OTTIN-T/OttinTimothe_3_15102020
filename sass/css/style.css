@@ -129,16 +129,34 @@ td:not([align]), th:not([align]) {
     opacity: 0; } }
 @keyframes coeur-remplissage {
   0% {
-    background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 40%);
+    background: linear-gradient(0deg, #FF79DA 5%, #9356DC 10%, white 60%);
     -webkit-background-clip: text; }
-  25% {
-    background: linear-gradient(0deg, #FF79DA 20%, #9356DC 40%, white 30%);
+  10% {
+    background: linear-gradient(0deg, #FF79DA 10%, #9356DC 20%, white 60%);
+    -webkit-background-clip: text; }
+  20% {
+    background: linear-gradient(0deg, #FF79DA 20%, #9356DC 40%, white 50%);
+    -webkit-background-clip: text; }
+  30% {
+    background: linear-gradient(0deg, #FF79DA 30%, #9356DC 40%, white 50%);
+    -webkit-background-clip: text; }
+  40% {
+    background: linear-gradient(0deg, #FF79DA 40%, #9356DC 50%, white 40%);
     -webkit-background-clip: text; }
   50% {
-    background: linear-gradient(0deg, #FF79DA 30%, #9356DC 60%, white 20%);
+    background: linear-gradient(0deg, #FF79DA 50%, #9356DC 60%, white 40%);
     -webkit-background-clip: text; }
-  75% {
-    background: linear-gradient(0deg, #FF79DA 40%, #9356DC 80%, white 10%);
+  60% {
+    background: linear-gradient(0deg, #FF79DA 60%, #9356DC 70%, white 30%);
+    -webkit-background-clip: text; }
+  70% {
+    background: linear-gradient(0deg, #FF79DA 70%, #9356DC 80%, white 30%);
+    -webkit-background-clip: text; }
+  80% {
+    background: linear-gradient(0deg, #FF79DA 80%, #9356DC 90%, white 20%);
+    -webkit-background-clip: text; }
+  90% {
+    background: linear-gradient(0deg, #FF79DA 90%, #9356DC 100%, white 20%);
     -webkit-background-clip: text; }
   100% {
     background: linear-gradient(0deg, #FF79DA 60%, #9356DC 100%, white 0%);
@@ -271,7 +289,7 @@ main .img-enchante-menu img {
   .menu h1 {
     font-family: "Shrikhand-Regular", Arial, "Arial Black", "Comic Sans MS", "Times New Roman", "Trebuchet MS";
     font-size: 1.5rem;
-    margin: 0rem 1rem 2rem 0rem; }
+    margin: 0rem 1.1rem 2rem 0rem; }
   .menu h2 {
     border-bottom: 0.2rem solid #99E2D0;
     width: 2.5rem;
@@ -295,15 +313,15 @@ main .img-enchante-menu img {
   .div-background h3 {
     padding-bottom: 0.3rem;
     max-width: 85%; }
-  .div-background:active .div-accompagnement {
+  .div-background:hover .div-accompagnement {
     animation: prix-effect 1s;
     margin-right: 15%; }
-  .div-background:active .check-background {
+  .div-background:hover .check-background {
     animation: background-effect 1s;
     display: flex; }
-  .div-background:active .fa-check-circle {
+  .div-background:hover .fa-check-circle {
     animation: check-effect 1s 0.2s; }
-  .div-background:active p, .div-background:active h3 {
+  .div-background:hover p, .div-background:hover h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
@@ -588,10 +606,11 @@ section, main, footer {
   color: transparent;
   margin-left: -1.5rem;
   margin: 0rem 0rem 0rem -1.5rem !important; }
-  .fas-coeur:active {
+  .fas-coeur:hover {
     background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
-    animation: coeur-remplissage 0.25s; }
+    animation: coeur-remplissage 0.25s;
+    transform: scale(1.1, 1.11); }
 
 .far-coeur:active {
   color: transparent; }
