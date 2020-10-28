@@ -309,7 +309,8 @@ main .img-enchante-menu img {
   border-radius: 0.8rem;
   box-shadow: 0rem 0.4rem 0.8rem -0.5rem #8c8c8c;
   animation: fade-div 2s;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .div-background h3 {
     padding-bottom: 0.3rem;
     max-width: 85%; }

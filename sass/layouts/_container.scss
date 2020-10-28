@@ -56,6 +56,7 @@ main{
     box-shadow: 0rem 0.4rem 0.8rem -0.5rem darken($colour-background, 40%);
     animation: fade-div 2s;
     overflow: hidden;
+    cursor: pointer;
 
     	h3 {
 		    padding-bottom: 0.3rem;
