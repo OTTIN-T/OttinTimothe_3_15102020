@@ -109,7 +109,7 @@ td:not([align]), th:not([align]) {
     background-color: #FF79DA;
     opacity: 1; }
   10% {
-    transform: translate(0, -15px);
+    transform: translate(0, -70%);
     background-color: #99E2D0;
     opacity: 1; }
   100% {
