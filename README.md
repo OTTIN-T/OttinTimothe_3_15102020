@@ -5,12 +5,12 @@ Projet réalisé par OTTIN Timothé.
 
 Ceci est le projet numéro 3 de la formation développeur web d'OpenClassrooms.
 Le projet consistais à intégrer une maquette uniquement en HTML5/CSS3. 
-La maquette est fournie par OpenClassrooms. 
-Les animations étaient imposée par un cahier des charges. 
+La maquette etait fournie par OpenClassrooms. 
+Les animations étaient imposées par un cahier des charges. 
 L'utilisation de Sass était autoriser pour gérer le CSS. 
-Le site devait responsive et valider les validateurs W3C.
+Le site devait être responsive et valider les validateurs W3C.
 
-Je possédais quelques fondations fragiles en HTML5 et CSS3, que j'ai pu consolider avec ce projet.
+Je possédais quelques bases en HTML5 et CSS3, que j'ai pu consolider avec ce projet. J'ai également pus découvrir les joies et le plaisir des animations !
 
 Ce projet fus réalisé en quasi-totale autonomie. Je possédais l'aide d'un mentor OpenClassrooms une fois par semaine. 
 
@@ -22,6 +22,7 @@ Retrouvez une version améliorée: [réalisée une fois la formation terminée](
 
 - Cloner le repo dans un dossier
 - Ouvrez "index.html" dans votre navigateur
+
 ### Ou
 
 - Rendez-vous sur [OhMyFood](https://ottin-t.github.io/OttinTimothe_3_15102020/)
